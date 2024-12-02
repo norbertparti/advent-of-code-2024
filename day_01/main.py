@@ -30,10 +30,12 @@ def main(input_file):
     for l, r in zip(left, right):
         diff_value = abs(l[0] - r[0])
         summ += diff_value
+    print(left)
+    print(right)
     print(summ)
 
 
 if __name__ == "__main__":
     current_dir = Path(__file__).parent
-    input_file = current_dir / "inputs" /"input.txt"
+    input_file = current_dir / "inputs" /"test_input.txt"
     main(input_file)
